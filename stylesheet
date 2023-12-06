@@ -1,0 +1,365 @@
+@charset "UTF-8";
+/* body */
+    /* font */
+    header,.work{
+        line-height: 1;
+        font-size: 18px;
+        font-family: 'DM Sans', sans-serif;
+        color: #000;
+    }
+    h2{
+        line-height: 1;
+        font-size: 25px;
+        font-family: 'DM Sans', sans-serif;
+        color: #000;
+    }
+    a,a:link,a:visited {
+        line-height: 1;
+        font-size: 16px;
+        font-family: 'DM Sans', sans-serif;
+        text-decoration: none;
+        color: #000;
+    }
+    a:hover {
+        color: #888;
+    }
+    p{
+        line-height: 2;
+        font-size: 16px;
+        font-family: 'Noto Serif JP', serif;
+        color: #000;
+        text-align: center;
+    }
+    .name{
+        line-height: 2;
+        font-size: 20px;
+        font-family: 'Noto Serif JP', serif;
+        color: #000;
+    }
+    .SNS p{
+        line-height: 1;
+        font-size: 16px;
+        font-family: 'DM Sans', sans-serif;
+        text-decoration: none;
+        color: #000;
+    }
+    .SNS p:hover{
+        color: #888;
+    }
+    footer p small{
+        line-height: 1;
+        font-size: 12px;
+        font-family: 'DM Sans', sans-serif;
+        text-decoration: none;
+        color: #666262;
+    }
+    /* iphone */
+    @media screen and (max-width:767px) {
+    h2{
+        font-size: 20px;
+    }
+    }
+/* header */
+    header {
+        position: fixed;
+        top: 0;
+        display: flex;
+        background: rgba(210, 217, 221, 0.5);
+        height: 40px;
+        width: 100%;
+    }
+    header nav{
+        margin: 0 0 0 auto;
+    }
+    header nav ul{
+        list-style-type: none;
+        display: flex;
+    }
+    h1{
+        margin-top: 3px;
+        margin-left: 100px;
+    }
+    h1 img{
+        width: 70px;
+        transition: 1s all;
+    }
+    h1 img:hover{
+        transform: perspective(100px) translateZ(-20px);
+      }
+
+    header nav ul{
+        margin-top: 10px;
+        margin-right: 20px;
+    }
+    header nav ul li{
+        margin: 0 20px 0;
+    }
+    /* iPad Air */
+    @media screen and (max-width:979px) {
+        header nav{
+            margin-left: 200px;
+        }
+        header nav ul{
+            padding: 0;
+        }
+        header nav ul li{
+            margin: 0 10px 0;
+        }
+    }
+    /* iphone */
+    @media screen and (max-width:767px) {
+        h1{
+            display: none;
+        }
+        header nav{
+            margin-left: 0;
+        }
+        header nav ul{
+            padding: 0;
+            margin-left: 10px;
+        }
+        header nav ul li{
+            margin: 0 10px 0;
+        }
+    }
+/* main */
+    p{
+        margin: 20px 300px;
+    }
+    h2{
+        text-align: center;
+    }
+    /* index */
+    .visual{
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+    }
+    .visual img{
+        width: 40%;
+    }
+    /* iPad Air */
+    @media screen and (max-width:979px) {
+        .visual{
+            display: flex;
+            justify-content: center;
+            height: 70vh;
+            align-items: center;
+        }
+    }
+    /* iphone */
+    @media screen and (max-width:767px) {
+        .visual{
+            display: flex;
+            justify-content: center;
+            height: 70vh;
+            align-items: center;
+        }
+        .visual img{
+            width: 80%;
+        }
+    }
+    .works{
+        margin: 50px 50px 50px;
+    }
+    .wholework{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        }
+    .work{
+        margin: 50px 50px;
+    }
+    .works img{
+        width: 250px;
+    }
+    .works img:hover{
+        box-shadow: 7px 7px 7px rgba(44, 45, 46, 0.5);
+        transform: translateY(-3px);
+        transition-duration: 0.3s;
+      }
+    .text01{
+        margin-top: 30px ;
+    }
+    .profile{
+        margin-top: 100px;
+    }
+    .face{
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+    .profile img{
+        width: 150px;
+        height: 150px;
+    }
+    .contact{
+        margin-top: 100px;
+    }
+    .SNS{
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+    .SNS p{
+        margin: 20px 50px;
+    }
+    .FACEBOOK{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .MAIL{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .INSTAGRAM{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .SNS img{
+        opacity: 80%;
+        width: 50px;
+        }
+        .SNS img:hover{
+            filter: drop-shadow(5px 5px 5px rgba(44, 45, 46, 0.5));
+            transform: translateY(-3px);
+            transition-duration: 0.3s;
+    }
+        /* iPad Air */
+    @media screen and (max-width:979px) {
+        p{
+            margin:50px 150px;
+        }
+    }
+    /* iphone */
+    @media screen and (max-width:767px) {
+        h2{
+            margin: 30px;
+        }
+        p{
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+        .wholework{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .works{
+            margin: 0;
+        }
+        .work{
+        margin: 20px
+        }
+        .works img{
+        width: 130px;
+        }
+        p{
+            margin: 50px;
+            margin-bottom: 30px;
+        }
+        .text01{
+            display: contents;
+            justify-content: center;
+        }
+        .name{
+            display: flex;
+            justify-content: center;
+        }
+        .text02 {
+            display: contents;
+            justify-content: center;
+        }
+        .contact p{
+            font-size: 12px;
+        }
+        .FACEBOOK,.MAIL,.INSTAGRAM{
+            width: 100px;
+        }
+        footer p{
+            margin-top: 30px;
+        }
+    }
+    /* products */
+    .italy,.bread,.beauty,.rehouse,.love,.choco,.clothing,.illustrator,.logo{
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+    .A4{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        }
+    .A4 img{
+        width: 400px;
+        margin: 20px;
+        border: 1.5px solid rgb(176, 181, 185);
+        }
+    .square{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .square img{
+        width: 350px;
+        margin: 30px 50px 50px;
+        border: 1.5px solid rgb(176, 181, 185);
+        }
+    .post{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .post img{
+        width: 600px;
+        margin: 50px;
+        border: 1.5px solid rgb(176, 181, 185);  
+    }
+    .illustrator p{
+        margin-bottom: 0;
+    }
+    @media screen and (max-width:979px) {
+        .A4 img{
+            width: 500px;
+        }
+        .square img{
+            width: 500px;
+        }
+        .post img{
+            width: 500px;
+        }
+    }
+    @media screen and (max-width:767px) {
+        .A4 img{
+            width: 300px;
+        }
+        .square img{
+            width: 300px;
+        }
+        .post img{
+            width: 350px;
+        }
+    }
+/* footer */
+    footer{
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:rgba(210, 217, 221, 0.5);
+    }
+    /* iphone */
+    @media screen and (max-width:767px) {
+       footer{
+        height: 30px;
+       }
+        footer p{
+            font-size: 5px;
+       }
+    }
