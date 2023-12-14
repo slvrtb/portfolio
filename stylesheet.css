@@ -97,7 +97,7 @@
     /* iPad Air */
     @media screen and (max-width:979px) {
         header nav{
-            margin-left: 250px;
+            margin-left: 300px;
         }
         header nav ul{
             padding: 0;
